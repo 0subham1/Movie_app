@@ -1,0 +1,17 @@
+import React from "react";
+
+// custom component Animal
+export const Animal = (props) => {
+  return (
+    <>
+      <h3>{props.name}</h3>
+      <h3>{props.color}</h3>
+      <h3>{props.age}</h3>
+    </>
+  );
+};
+
+export const Birds = () => {
+  return <div>Parot</div>;
+};
+export default Animal;

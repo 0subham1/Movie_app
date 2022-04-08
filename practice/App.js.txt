@@ -1,0 +1,40 @@
+import "./App.css";
+import Player from "./Player";
+import { Animal } from "./Player";
+import { Birds } from "./Player";
+import React from "react";
+import { useState, useEffect } from "react";
+
+const Item = () => {
+  return (
+    <>
+      <h1>pen</h1>
+      <Player></Player>
+      <Animal name="monkey" color={"black"} age="8"></Animal>
+      <Birds></Birds>
+    </>
+  );
+};
+
+const App = () => {
+  // [name ,function] =useState(initial value)
+  const [counter, setCounter] = useState(30);
+
+  useEffect(()=>{
+    setCounter(100)
+  },[])
+  
+  return (
+    <>
+      <div className="App">
+        <button onClick={() => setCounter( (count) => count - 1)}>
+          -
+        </button>
+        <h1>{counter}</h1>
+        <button onClick={() => setCounter((count) => count + 1)}>+</button>
+      </div>
+    </>
+  );
+};
+
+export default App;
