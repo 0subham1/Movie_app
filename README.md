@@ -1,1 +1,1 @@
-took help of API and Css from different sources
+took help for API and Css from different sources
